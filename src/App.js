@@ -1,7 +1,10 @@
+import Home from "./todo/Home";
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Home/>
+    </>
   );
 }
 
