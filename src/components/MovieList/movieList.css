@@ -1,0 +1,27 @@
+.movie-title{
+    @apply my-4
+    /*@apply grid grid-cols-[auto_1fr_1fr] gap-x-4 items-center mb-3*/
+    /*after:bg-gray-300 after:h-[1px]*/
+}
+.slider-image{
+    @apply rounded
+}
+.swiper-button-prev{
+    align-items: center;
+    top: 13%;
+    left: 92%;
+}
+.swiper-button-next{
+    top: 13%;
+    right: 0;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+     font-family: swiper-icons;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+.swiper-button-disabled{
+    color: #b6b6b6;
+}
