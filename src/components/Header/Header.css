@@ -3,45 +3,44 @@
 }
 
 .header {
-    @apply relative grid grid-cols-3 mx-8
+    @apply relative mx-8 h-12
+    grid grid-cols-3 content-end
 }
 
 .menu {
-    @apply col-start-2
+ @apply col-span-2  flex justify-end
 }
 
 .menu ul {
     @apply text-lg font-bold p-2.5 h-full
-    flex justify-between items-center
+    flex justify-between items-center gap-x-10
+
 }
 
 /*.sa {*/
 /*    @apply flex justify-end items-center gap-2*/
 /*}*/
+.search-avatar{
+    @apply flex justify-end gap-3
+}
 
 .search-box {
-    position: absolute;
-    display: flex;
-    background-color: darkgrey;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    transform: translateY(-100%);
-    transition: all 100ms;
+    @apply absolute flex w-full h-full top-0 left-0 p-2.5
+    -translate-y-full duration-300 ease-out
+    bg-blue-500
 }
 .show{
-    transform: translateY(0);
+    @apply translate-y-0
 }
 .search-box input{
-    width: 100%;
-    height: 100%;
-    outline: none;
+    @apply w-full h-full outline-0 px-3 font-semibold
 }
 .search-box button{
-    padding: 10px;
-    background-color: white;
-    outline: none;
-
+    @apply px-2 bg-white outline-0;
+}
+.avatar{
+    @apply flex items-center gap-2 h-full
+}
+.avatar-image{
+    @apply inline-block h-10 w-10 rounded-full ring-2 ring-white
 }
