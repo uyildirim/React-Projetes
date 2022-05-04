@@ -1,6 +1,6 @@
 
 .slider-item {
-    @apply h-[500px]
+    @apply h-[500px] xl:h-[700px] 2xl:h-[800px]
     bg-cover bg-top
 }
 
