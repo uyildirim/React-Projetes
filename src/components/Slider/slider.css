@@ -1,0 +1,30 @@
+
+.slider-item {
+    @apply h-[500px]
+    bg-cover bg-top
+}
+
+.slider-bgcolor {
+    @apply h-full w-1/2
+    bg-gradient-to-r from-neutral-900
+}
+
+.slider-container {
+    @apply
+    text-white mx-9 flex h-full items-center;
+}
+
+.slider-info {
+@apply space-y-2
+}
+
+.slider-title {
+    @apply font-bold text-4xl
+}
+
+.slider-review {
+    @apply text-white flex items-center gap-x-2
+}
+.slider-overview{
+    @apply leading-snug font-light
+}
